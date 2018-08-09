@@ -50,6 +50,7 @@ def data_iterator(raw_data, batch_size, num_steps):
 def run_epoch(session, m, data, eval_op):
     """Runs the model on the given data."""
     epoch_size = ((len(data) // m.batch_size) - 1) // m.num_steps
+    print("%d" % (epoch_size))
     start_time = time.time()
     costs = 0.0
     iters = 0
