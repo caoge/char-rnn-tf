@@ -74,7 +74,7 @@ def run_epoch(session, m, data, eval_op):
     
 def main(_):
     train_data = context_of_idx
-    print("train_data: %s ..." % (train_data))
+    
     with tf.Graph().as_default(), tf.Session(config=config_tf) as session:
         initializer = tf.random_uniform_initializer(-config.init_scale,
                                                 config.init_scale)
