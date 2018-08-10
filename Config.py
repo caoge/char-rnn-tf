@@ -19,4 +19,4 @@ class Config(object):
     is_beams = True #whether or not using beam search
     beam_size = 2 #size of beam search
     len_of_generation = 100 #The number of characters by generated
-    start_sentence = u'痞子为啥离队了啊，求大哥解释' #the seed sentence to generate text
+    start_sentence = u'这一波就是拉上面的人太多了' #the seed sentence to generate text
