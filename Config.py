@@ -14,9 +14,9 @@ class Config(object):
     model_path = './Model' #the path of model that need to save or load
     
     #parameters for generation
-    save_time = 30 #load save_time saved models
+    save_time = 25 #load save_time saved models
     is_sample = True #true means using sample, if not using max
     is_beams = True #whether or not using beam search
     beam_size = 2 #size of beam search
     len_of_generation = 200 #The number of characters by generated
-    start_sentence = u'86在蓝标' #the seed sentence to generate text
+    start_sentence = u'刚主要是没掩体' #the seed sentence to generate text
