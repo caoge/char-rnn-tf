@@ -7,6 +7,9 @@ import random
 import Config
 import Model
 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 config_tf = tf.ConfigProto()
 config_tf.gpu_options.allow_growth = True
 config_tf.inter_op_parallelism_threads = 1
