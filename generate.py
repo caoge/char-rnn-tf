@@ -24,7 +24,7 @@ is_sample = config.is_sample
 is_beams = config.is_beams
 beam_size = config.beam_size
 len_of_generation = config.len_of_generation
-start_sentence = sys.argv[1]
+start_sentence = unicode(sys.argv[1], 'utf-8')
 
 def run_epoch(session, m, data, eval_op, state=None):
     """Runs the model on the given data."""
